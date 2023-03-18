@@ -21,7 +21,7 @@ public class Problem6 {
                 String twoChars = nickname.substring(j, j + 2);             // 두개씩 쪼개서 twoChars에 저장
                 if (formMap.containsKey(twoChars)) {                        // 해시맵에 키가 있으면
                     indexList.add(formMap.get(twoChars));                   // 중복된 폼의 인덱스를 indexList에 추가
-                    indexList.add(i);
+                    indexList.add(i);                                       // 현재 인덱스 indexList에 추가
                     formMap.put(twoChars, i);                               // 중복된 폼의 인덱스를 현재 폼의 인덱스로 변경
                 } else {                                                    // 해시맵에 키가 없으면
                     formMap.put(twoChars, i);                               // 해시맵에 twoChars 추가

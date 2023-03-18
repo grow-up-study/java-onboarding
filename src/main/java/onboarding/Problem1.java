@@ -14,7 +14,7 @@ public class Problem1 {
         if (pobi.get(0) < 1 || pobi.get(1) > 400 || crong.get(0) < 1 || crong.get(1) > 400) {
             return -1;
         }
-        if(pobi.get(1) - pobi.get(0) != 1){                 // ||를 못쓰는데 두개를 합칠방법이 있으려나
+        if(pobi.get(1) - pobi.get(0) != 1){
             return -1;
         }
         if(crong.get(1) - crong.get(0) != 1){

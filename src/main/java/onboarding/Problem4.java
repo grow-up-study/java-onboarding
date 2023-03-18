@@ -8,7 +8,6 @@ public class Problem4 {
         return answer;
     }
     public static StringBuilder encryption(StringBuilder encrypt){
-
         for (int k = 0; k < encrypt.length(); k++) {
             if (encrypt.charAt(k) >= 65 && encrypt.charAt(k) <= 90) {
                 int x = 155 - encrypt.charAt(k);

@@ -18,7 +18,7 @@ public class Problem2 {
                 c_len = crypArray.length();                                         // 문자열 길이 다시 측정
             }
             k += 1;
-        }   //정규표현식?? -> 문자열을 탐색하는 방법
+        }                                                                           //정규표현식?? -> 문자열을 탐색하는 방법
         return crypArray;                                                           // 최종 문자열 StringBuilder로 반환
     }
 }
