@@ -1,5 +1,12 @@
+/**
+ * 이 클래스는 닉네임 중복 제한을 위한 클래스다.
+ * 닉네임 중복 검사 기능에 대한 콘트롤은 compareNickname 메소드를 사용하여 수행한다.
+ *
+ * @version 1.00 03/21/23
+ * @author 허준기
+ */
 package onboarding;
-import java.lang.StringBuilder;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,9 +19,9 @@ public class Problem6 {
     }
 
     public static List<String> compareNickname(List<List<String>> forms) {
-        HashMap<String, Integer> formMap = new HashMap<String, Integer>();  // 닉네임을 키, 인덱스를 밸류로 저장하는 hashmap
-        List<Integer> indexList = new ArrayList<Integer>();                 // 중복되는 인덱스를 저장할 리스트
-        HashSet<String> answerList = new HashSet<String>();                 // 중복되는 이메일을 저장할 HashSet
+        HashMap<String, Integer> formMap = new HashMap<>();                 // 닉네임을 키, 인덱스를 밸류로 저장하는 hashmap
+        List<Integer> indexList = new ArrayList<>();                        // 중복되는 인덱스를 저장할 리스트
+        HashSet<String> answerList = new HashSet<>();                       // 중복되는 이메일을 저장할 HashSet
         for (int i = 0; i < forms.size(); i++) {                            // 주어진 이중 리스트의 크기만큼 반복
             String nickname = forms.get(i).get(1);                          // 검사할 닉네임 가져오기
             for (int j = 0; j < nickname.length() - 1; j++) {               // 닉네임의 길이만큼 반복
