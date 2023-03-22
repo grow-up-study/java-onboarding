@@ -9,10 +9,10 @@ package onboarding;
 
 public class Problem3 {
     public static int solution(int number) {
-        return clapNum(number);
+        return calculateClapNum(number);
     }
 
-    public static int clapNum(int number) {
+    public static int calculateClapNum(int number) {
         int clap = 0;
         for (int j = 1; j <= number; j++) {
             if (j % 3 == 0) {
