@@ -24,8 +24,8 @@ public class Problem1 {
         if (crong.get(1) - crong.get(0) != 1) {
             return -1;
         }
-        pobiScore = Math.max(plusCalc(pobi.get(1)), multCalc(pobi.get(0)));
-        crongScore = Math.max(plusCalc(crong.get(0)), multCalc(crong.get(1)));
+        pobiScore = Math.max(plusEachDigit(pobi.get(1)), multEachDigit(pobi.get(0)));
+        crongScore = Math.max(plusEachDigit(crong.get(0)), multEachDigit(crong.get(1)));
         return compareScore(pobiScore, crongScore);
     }
 
@@ -37,7 +37,7 @@ public class Problem1 {
         return answer;
     }
 
-    public static int plusCalc(int page) {                  //모든 자리수 더하기
+    public static int plusEachDigit(int page) {                  //모든 자리수 더하기
         int result = 0;
         while (page != 0) {
             result += page % 10;
@@ -46,7 +46,7 @@ public class Problem1 {
         return result;
     }
 
-    public static int multCalc(int page) {                  //모든 자리수 곱하기
+    public static int multEachDigit(int page) {                  //모든 자리수 곱하기
         int result = 0;
         while (page != 0) {
             result *= page % 10;
